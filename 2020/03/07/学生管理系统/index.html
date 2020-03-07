@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Hexo</title>
+  <title>学生管理系统 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="案例需求添加学生：通过键盘录入学生信息，添加到集合中  删除学生：通过键盘录入要删除学生的学号，将该学生对象从集合中删除  修改学生：通过键盘录入要修改学生的学号，将该学生对象其他信息进行修改  查看学生：将集合中的学生对象信息进行展示  退出系统：结束程序  实现步骤1. 定义学生类，包含以下成员变量private String id &#x2F;&#x2F; 学生id  private String name &#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学生管理系统">
+<meta property="og:url" content="http://yoursite.com/2020/03/07/%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="案例需求添加学生：通过键盘录入学生信息，添加到集合中  删除学生：通过键盘录入要删除学生的学号，将该学生对象从集合中删除  修改学生：通过键盘录入要修改学生的学号，将该学生对象其他信息进行修改  查看学生：将集合中的学生对象信息进行展示  退出系统：结束程序  实现步骤1. 定义学生类，包含以下成员变量private String id &#x2F;&#x2F; 学生id  private String name &#x2F;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-07T07:55:10.000Z">
+<meta property="article:modified_time" content="2020-03-07T09:12:00.011Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -150,36 +155,112 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-学生管理系统" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/07/%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="archive-article-date">
-  	<time datetime="2020-03-07T07:55:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/07/%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">学生管理系统</a>
+    <h1 class="article-title" itemprop="name">
+      学生管理系统
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/03/07/%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="archive-article-date">
+  	<time datetime="2020-03-07T07:55:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="案例需求"><a href="#案例需求" class="headerlink" title="案例需求"></a>案例需求</h2><p>添加学生：通过键盘录入学生信息，添加到集合中 </p>
+<p>删除学生：通过键盘录入要删除学生的学号，将该学生对象从集合中删除 </p>
+<p>修改学生：通过键盘录入要修改学生的学号，将该学生对象其他信息进行修改 </p>
+<p>查看学生：将集合中的学生对象信息进行展示 </p>
+<p>退出系统：结束程序 </p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h5 id="1-定义学生类，包含以下成员变量"><a href="#1-定义学生类，包含以下成员变量" class="headerlink" title="1. 定义学生类，包含以下成员变量"></a>1. 定义学生类，包含以下成员变量</h5><p>private String id // 学生id </p>
+<p>private String name // 学生姓名 </p>
+<p>private String int // 学生年龄 </p>
+<h5 id="2-学生管理系统主界面的搭建步骤"><a href="#2-学生管理系统主界面的搭建步骤" class="headerlink" title="2. 学生管理系统主界面的搭建步骤"></a>2. 学生管理系统主界面的搭建步骤</h5><p>2.1 用输出语句完成主界面的编写 </p>
+<p>2.2 用Scanner实现键盘输入 </p>
+<p>2.3 用switch语句完成选择的功能 </p>
+<p>2.4 用 循环完成功能结束后再次回到主界面 </p>
+<h5 id="3-学生管理系统的添加学生功能实现步骤"><a href="#3-学生管理系统的添加学生功能实现步骤" class="headerlink" title="3. 学生管理系统的添加学生功能实现步骤"></a>3. 学生管理系统的添加学生功能实现步骤</h5><p>3.1 定义一个方法，接收ArrayList集合 </p>
+<p>3.2 方法内完成添加学生的功能   ①键盘录入学生信息   ②根据录 入的信息创建学生对象   ③将学生对象添加到集合中   ④提示添加成功信息 </p>
+<p>3.3 在添加学生的选项里调用 添加学生的方法 </p>
+<h5 id="4-学生管理系统的查看学生功能实现步骤"><a href="#4-学生管理系统的查看学生功能实现步骤" class="headerlink" title="4. 学生管理系统的查看学生功能实现步骤"></a>4. 学生管理系统的查看学生功能实现步骤</h5><p>4.1 定义一个方法，接收ArrayList集合 </p>
+<p>4.2 方法内遍历集合，将学生信息进行输出 </p>
+<p>4.3 在查看所有学生选 项里调用查看学生方法</p>
+<h5 id="5-学生管理系统的删除学生功能实现步骤"><a href="#5-学生管理系统的删除学生功能实现步骤" class="headerlink" title="5. 学生管理系统的删除学生功能实现步骤"></a>5. 学生管理系统的删除学生功能实现步骤</h5><p>5.1 定义一个方法，接收ArrayList集合 </p>
+<p>5.2 方法中接收要删除学生的学号 </p>
+<p>5.3 遍历集合，获取每个学生对象 </p>
+<p>5.4 使用学生对象的学号和录入的要删除的学号进行比较，如果相同，则将当前学生对象从集合中删除 </p>
+<p>5.5 在删除学生选项里调用删除学生的方法 </p>
+<h5 id="6-学生管理系统的修改学生功能实现步骤"><a href="#6-学生管理系统的修改学生功能实现步骤" class="headerlink" title="6. 学生管理系统的修改学生功能实现步骤"></a>6. 学生管理系统的修改学生功能实现步骤</h5><p>6.1 定义一个方法，接收ArrayList集合 </p>
+<p>6.2 方法中接收要修改学生的学号 </p>
+<p>6.3 通过键盘录入学生对象所需的信息，并创建对象 </p>
+<p>6.4 遍历集合，获取每一个学生对象。并和录入的修改学生学号进行比较.如果相同，则使用新学生对象替换当前学生对象 </p>
+<p>6.5 在修改学生选项里调用修改学生的方法 </p>
+<h5 id="7-退出系统"><a href="#7-退出系统" class="headerlink" title="7. 退出系统"></a>7. 退出系统</h5><p>使用System.exit(0);退出JVM </p>
+<h2 id="学生类的定义"><a href="#学生类的定义" class="headerlink" title="学生类的定义"></a>学生类的定义</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String id, String name, <span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.id = id;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(String id)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.id = id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="测试类的定义"><a href="#测试类的定义" class="headerlink" title="测试类的定义"></a>测试类的定义</h2><h5 id="1-判断学号是否已存在"><a href="#1-判断学号是否已存在" class="headerlink" title="1. 判断学号是否已存在"></a>1. 判断学号是否已存在</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个方法，判断学号是否已存在</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isUsed</span><span class="params">(ArrayList&lt;Student&gt; arrayList, String id)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">boolean</span> flag = <span class="keyword">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (Student student : arrayList) &#123;</span><br><span class="line">        <span class="keyword">if</span> (student.getId().equals(id)) &#123;</span><br><span class="line">            flag = <span class="keyword">true</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="2-添加学生"><a href="#2-添加学生" class="headerlink" title="2. 添加学生"></a>2. 添加学生</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个添加学生的方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">addStudent</span><span class="params">(ArrayList&lt;Student&gt; arrayList)</span> </span>&#123;</span><br><span class="line">    Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    String id;</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">        System.out.println(<span class="string">"请输入学号"</span>);</span><br><span class="line">        id = sc.nextLine();</span><br><span class="line">        <span class="keyword">boolean</span> flag = isUsed(arrayList, id);</span><br><span class="line">        <span class="keyword">if</span> (flag) &#123;</span><br><span class="line">            System.out.println(<span class="string">"你输入的学号已存在，请重新输入"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">"请输入姓名"</span>);</span><br><span class="line">    String name = sc.nextLine();</span><br><span class="line">    System.out.println(<span class="string">"请输入年龄"</span>);</span><br><span class="line">    <span class="keyword">int</span> age = sc.nextInt();</span><br><span class="line">    arrayList.add(<span class="keyword">new</span> Student(id, name, age));</span><br><span class="line">    System.out.println(<span class="string">"添加学生成功"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="3-查看所有学生"><a href="#3-查看所有学生" class="headerlink" title="3. 查看所有学生"></a>3. 查看所有学生</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个查看学生的方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">findAllStudent</span><span class="params">(ArrayList&lt;Student&gt; arrayList)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (arrayList.size() == <span class="number">0</span>) &#123;</span><br><span class="line">        System.out.println(<span class="string">"无信息，请先添加信息再查询"</span>);</span><br><span class="line">        <span class="comment">//为了让程序不再往下执行，我们在这里写上return;            </span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (Student student : arrayList) &#123;</span><br><span class="line">        System.out.println(student.getId() + <span class="string">"\t\t"</span> + student.getName() + <span class="string">"\t"</span> + student.getAge() + <span class="string">"岁"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="4-删除学生"><a href="#4-删除学生" class="headerlink" title="4. 删除学生"></a>4. 删除学生</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个删除学生的方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">deleteStudent</span><span class="params">(ArrayList&lt;Student&gt; arrayList)</span> </span>&#123;</span><br><span class="line">    Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    String id;</span><br><span class="line">    System.out.println(<span class="string">"请输入学号"</span>);</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">        id = sc.nextLine();</span><br><span class="line">        <span class="keyword">if</span> (isUsed(arrayList, id)) &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"你输入的学号不存在，请重新输入"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> idex = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrayList.size(); i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arrayList.get(i).getId().equals(id)) &#123;</span><br><span class="line">            idex = i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    arrayList.remove(idex);</span><br><span class="line">    System.out.println(<span class="string">"删除学生成功"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="5-修改学生"><a href="#5-修改学生" class="headerlink" title="5. 修改学生"></a>5. 修改学生</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个修改学生的方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">updataStudent</span><span class="params">(ArrayList&lt;Student&gt; arrayList)</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"请输入学号"</span>);</span><br><span class="line">    Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    String id;</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">        id = sc.nextLine();</span><br><span class="line">        <span class="keyword">if</span> (isUsed(arrayList, id)) &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"你输入的学号不存在，请重新输入"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> idex = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrayList.size(); i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arrayList.get(i).getId().equals(id)) &#123;</span><br><span class="line">            idex = i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">"请输入新姓名"</span>);</span><br><span class="line">    arrayList.get(idex).setName(sc.nextLine());</span><br><span class="line">    System.out.println(<span class="string">"请输入新年龄"</span>);</span><br><span class="line">    arrayList.get(idex).setAge(sc.nextInt());</span><br><span class="line">    System.out.println(<span class="string">"修改学生成功"</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="6-主界面"><a href="#6-主界面" class="headerlink" title="6.主界面"></a>6.主界面</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;Student&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">        System.out.println(<span class="string">"---学生管理系统---"</span>);</span><br><span class="line">        System.out.println(<span class="string">"1 增加学生"</span>);</span><br><span class="line">        System.out.println(<span class="string">"2 删除学生"</span>);</span><br><span class="line">        System.out.println(<span class="string">"3 修改学生"</span>);</span><br><span class="line">        System.out.println(<span class="string">"4 查看学生"</span>);</span><br><span class="line">        System.out.println(<span class="string">"5 退出"</span>);</span><br><span class="line">        System.out.println(<span class="string">"请输入你的选择"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> n = sc.nextInt();</span><br><span class="line">        <span class="keyword">switch</span> (n) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                addStudent(list);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                deleteStudent(list);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">                updataStudent(list);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">                findAllStudent(list);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">                System.out.println(<span class="string">"谢谢使用"</span>);</span><br><span class="line">                System.exit(<span class="number">0</span>); <span class="comment">//JVM退出</span></span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                System.out.println(<span class="string">"请输入正确选项"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,73 +272,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/07/%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-03-07T04:28:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一遍博客文章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%8D%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一遍博客文章</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/07/hello-world/" class="archive-article-date">
-  	<time datetime="2020-03-07T04:22:24.527Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/07/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -280,8 +394,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
